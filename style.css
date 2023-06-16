@@ -1,0 +1,167 @@
+body{
+    font-family: 'Montserrat', sans-serif;
+    margin: 0px;
+    padding: 0px;
+}
+.nav{
+    display: flex;
+    justify-content:space-evenly;
+    align-items: center;
+    background-color: #FFFBEB;
+    height: 50px;
+}
+.navbar{
+    list-style-type: none;
+    display: flex;
+    position: relative;
+}
+.navitem{
+    text-align: center;
+    text-decoration: none;
+    padding: 15px;
+    width: 100px;
+    transition: 0.5s;
+}
+.navitem>a{
+    text-decoration: none;
+}
+.navitem:hover{
+    background-color: #FFE7CC;
+    transform: translateY(5px);
+    border-radius: 0 0 5px 5px;
+}
+.dropdown{
+    position: absolute;
+    z-index: 1;
+    background-color: white;
+    display: none;
+    padding: 10px;
+
+}
+.magaza:hover .dropdown{
+    display: block;
+    background-color: blue;
+}
+.search{
+    width: 250px;
+    height: 25px;
+    border-radius: 10px;
+    border: 2px solid #F8CBA6;
+    background-image: url(/img/search.png);
+    background-repeat: no-repeat;
+    background-position: 10px 5px;
+    background-size: 18px;
+    padding-left: 30px;
+}
+.search::placeholder{
+    text-align: center;
+    color:darkgray;
+    font-weight: 600;
+}
+.search:hover{
+    border: 5px 5px black;
+}
+input[type=text]:hover{
+    box-shadow: 2px 2px lightgray;
+}
+.login{
+    padding: 10px 20px 10px 20px;
+    text-decoration: none;
+    background-color: #F8CBA6;
+    border-radius: 5px;
+}
+.login:hover{
+    background-color: #FFE7CC;
+}
+
+/* image carousel */
+.slayt{
+    display: flex;
+    justify-content: center;
+}
+.carousel{
+    box-shadow: 10px 10px 10px lightgray;
+    width: 800px;
+    height: 480px;
+    overflow: hidden;
+    position: relative;
+    list-style: none;
+    display: inline-block;
+    padding: 0;
+}
+.slide1{
+    position: absolute;
+    inset: 0;
+    animation: slide1 30s infinite;
+}
+.slide2{
+    position: absolute;
+    inset: 0;
+    animation: slide2 30s infinite;
+    
+}
+.slide3{
+    position: absolute;
+    inset: 0;
+    animation: slide3 30s infinite;
+
+}
+.slide4{
+    position: absolute;
+    inset: 0;
+    animation: slide4 30s infinite;
+
+}
+.resim{
+    width: 800px;
+}
+@keyframes slide4 {
+    0% {left: 0;}
+    10% {left: -800px;}
+    100% {left: -800px;}
+}
+@keyframes slide3 {
+    0% {left: 0;}
+    25%{left: 0;}
+    35% {left: -800px;}
+    100%{left: -800px;}
+}
+@keyframes slide2 {
+    0% {left: 0;}
+    50% {left: 0;}
+    60%{left: -800px;}
+    100% {left: -800px;}
+}
+@keyframes slide1 {
+    0% {left: 0;}
+    75% {left: 0;}
+    85% {left: -800px;}
+    100% {left: -800px;}
+}
+
+
+
+
+
+/* card */
+.cardmain{
+    padding-top: 15px;
+    padding-bottom: 25px;
+    display: block;
+    position: relative;
+    top: 700px;
+    text-align: center;
+    background-color:#FFFBEB;
+}
+.card{
+    display: flex;
+    justify-content: space-evenly;
+    
+}
+.product{
+    width: 200px;
+    border: 1px solid darkgray;
+}
+.productname{
+    margin: 10px 0 10px 20px;
+}
